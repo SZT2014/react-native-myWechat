@@ -1,0 +1,23 @@
+
+{
+  "name": "react-native-my-we-chat",
+  "version": "1.0.0",
+  "description": "react-native library for wechat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wechat",
+    "react",
+    "react-native"
+  ],
+  "dependencies": {
+    "events": "1.0.2"
+  },
+  "author": "SZT0791 <shuaizhitao@126.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
