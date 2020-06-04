@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-my-we-chat",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react-native library for wechat",
   "main": "index.js",
   "scripts": {
