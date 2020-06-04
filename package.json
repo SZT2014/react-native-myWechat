@@ -1,16 +1,22 @@
 
 {
   "name": "react-native-my-we-chat",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "react-native library for wechat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:SZT2014/react-native-myWechat.git"
+  },
   "keywords": [
     "wechat",
     "react",
-    "react-native"
+    "react-native",
+    "react-component",
+    "ios"
   ],
   "dependencies": {
     "events": "1.0.2"
