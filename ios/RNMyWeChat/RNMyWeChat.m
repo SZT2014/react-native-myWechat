@@ -118,7 +118,7 @@ RCT_EXPORT_METHOD(sendSuccessResponse:(RCTResponseSenderBlock)callback)
 {
     BaseResp* resp = [[BaseResp alloc] init];
     resp.errCode = WXSuccess;
-    [WXApi sendReq:req completion:^(BOOL success){
+    [WXApi sendReq:resp completion:^(BOOL success){
         if (success) {
             callback(@[[NSNull null]]);
         } else {
@@ -195,14 +195,6 @@ RCT_EXPORT_METHOD(sendErrorUserCancelResponse:(NSString *)message
         else {
             [self.bridge.eventDispatcher sendDeviceEventWithName:RCTWXEventName body:body];
         }
-    } else if ([resp isKindOfClass:[PayResp class]]) {
-            PayResp *r = (PayResp *)resp;
-            NSMutableDictionary *body = @{@"errCode":@(r.errCode)}.mutableCopy;
-            body[@"errStr"] = r.errStr;
-            body[@"type"] = @(r.type);
-            body[@"returnKey"] =r.returnKey;
-            body[@"type"] = @"PayReq.Resp";
-            [self.bridge.eventDispatcher sendDeviceEventWithName:RCTWXEventName body:body];
     }
 }
 
