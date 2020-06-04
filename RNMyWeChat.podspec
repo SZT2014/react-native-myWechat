@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/SZT2014/react-native-myWechat.git", :tag => "master" }
   s.vendored_libraries = "ios/libWeChatSDK.a"
-  s.source_files  = "RNMyWeChat/**/*.{h,m}"
+  s.source_files  = "**/*.{h,m}"
   s.requires_arc = true
   s.frameworks = 'SystemConfiguration','CoreTelephony'
   s.library = 'sqlite3','c++','z'
