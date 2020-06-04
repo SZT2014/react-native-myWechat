@@ -118,7 +118,7 @@ RCT_EXPORT_METHOD(sendSuccessResponse:(RCTResponseSenderBlock)callback)
 {
     BaseResp* resp = [[BaseResp alloc] init];
     resp.errCode = WXSuccess;
-    [WXApi sendReq:resp completion:^(BOOL success){
+    [WXApi sendResp:resp completion:^(BOOL success){
         if (success) {
             callback(@[[NSNull null]]);
         } else {
